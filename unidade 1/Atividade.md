@@ -1,204 +1,153 @@
-Introdução à Análise e Projeto de Sistemas de Informação.
-Conceitos e elementos fundamentais da engenharia de software - definição, características e tipos de
-modelagens. Ferramentas Case de apoio ao desenho dos diagramas UML
+Ficha de Requisitos — Aula 02
+Análise e Projeto de Sistemas
+Unidade II — Introdução à Análise e Projeto de Sistemas
+Atividade: Transformação do levantamento do sistema em requisitos funcionais e não funcionais.
+1. Identificação do Sistema
+
+Campo
+Descrição
+Nome do sistema
+Sistema de Estacionamento
+Objetivo
+Registro e Gerenciamento de carros, vagas, usuários e segurança
+Público-alvo
+Motororistas 
+Responsável pelo levantamento
+Grupo 
+Versão
+1.0
+
+2. Requisitos Funcionais
+Identificação
+RF01 —  Cadastro de veículos 
+Descrição
+Cadastrar veículos por placa, carro, modelo e placa
+Prioridade
+Alta
+Critérios de aceitação
+- Campos obrigatórios: placa e modelo.
+- Placa deve ser única no sistema.
+- Dados salvos em banco de dados.
+Exemplo
+Ao entrar no estacionamento, o motorista informa a placa e o sistema registra a entrada com data/hora.
 
 
-# Ficha de Requisitos — Aula 02
+Identificação
+RF02 — Gerenciamento de vagas
+Descrição
+O sistema deve mostrar a disponibilidade de vagas 
+Prioridade
+Alta
+Critérios de aceitação
+- Atualização automática ao ocupar ou liberar uma vaga.
+- Impedir ocupação de vaga já ocupada.
+- Identificação única por vaga.
+Exemplo
+Ao estacionar, o sistema marca a vaga como ocupada e associa ao veículo cadastrado.
 
-## Análise e Projeto de Sistemas
 
-**Unidade:** II — Introdução à Análise e Projeto de Sistemas  
-**Atividade:** Transformação do levantamento do sistema em requisitos funcionais e não funcionais  
-**Objetivo:** Registrar, de forma estruturada, o que o sistema deve fazer e quais características de qualidade deve atender.
+Identificação
+RF03— Registro de entrada e saida 
+Descrição
+O sistema deve registrar a data/hora de entrada e saída de cada veículo, calculando o tempo de permanência.
+Prioridade
+Alta
+Critérios de aceitação
+- Entrada e saída com timestamp preciso.
+- Cálculo automático do tempo estacionado.
+- Histórico de permanência por veículo.
+Exemplo
+O sistema registra a entrada às 14:00 e, na saída às 16:30, calcula 2h30 de estacionamento.
 
----
 
-## 1. Identificação do Sistema
+Identificação
+RF04— Calculo da tarifa  
+Descrição
+O sistema deve calcular o valor a pagar com base no tempo estacionado e na tabela de preços vigente.
+Prioridade
+Media
+Critérios de aceitação
+- Tarifa progressiva (ex: 1ª hora R$10, demais R$5/hora).
+- Exibição do valor antes do pagamento.
+Exemplo
+Veículo estacionou por 2h30 → valor = R$10 (1ª hora) + R$5 + R$5 (2h adicionais) = R$20.
 
-| Campo | Preenchimento |
-|---|---|
-| Nome do sistema | Sistema de Biblioteca |
-| Objetivo | Gerenciar cadastro de usuários, livros, empréstimos, devoluções e multas. |
-| Público-alvo | Alunos, bibliotecários e administradores. |
-| Responsável pelo levantamento | Grupo de estudantes |
-| Versão | 1.0 |
 
----
+Identificação
+RF05— Emissão de comprovante 
+Descrição
+O sistema deve gerar um comprovante de pagamento impresso ou digital contendo os dados da estadia e valor pago.
+Prioridade
+Media
+Critérios de aceitação
+- Comprovante com placa, tempo, valor e data/hora.
+- Opção de enviar por e-mail 
+Exemplo
+Na saída, o sistema imprime um ticket com "Placa ABC-1234, 2h30, R$20,00, 26/08/2026 16:30".
 
-# 2. Requisitos Funcionais
 
-> Requisitos funcionais descrevem **funcionalidades ou serviços que o sistema deve oferecer**.
+Identificação
+RF06— Relatorios  
+Descrição
+O sistema deve gerar relatórios de ocupação, faturamento diário/mensal e histórico de movimentações.
+Prioridade
+baixa
+Critérios de aceitação
+- Filtros por data, tipo de veículo ou vaga.
+Exemplo
+Administrador gera relatório de faturamento de agosto/2026.
 
-## RF01 — Cadastrar usuário
+3. Requisitos Não Funcionais
+Identificação
+RNF01- Tempo de Resposta
+Descrição
+O sistema deve processar operações críticas (entrada, saída, consulta de vaga) em no máximo 3 segundos sob carga normal de até 50 requisições simultâneas.
+Prioridade
+Alta 
+Critérios de aceitação
+- Tempo médio de resposta < 2 segundos.
+- Pico máximo aceitável: 5 segundos.
+Exemplo
+Ao registrar a saída de um veículo, o comprovante deve ser gerado e exibido em menos de 3 segundos.
 
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF01 |
-| **Descrição** | O sistema deve permitir que o bibliotecário cadastre usuários da biblioteca. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Deve permitir informar nome, matrícula, e-mail e telefone. 2. Deve impedir cadastro sem nome e matrícula. 3. Deve informar ao usuário quando o cadastro for concluído. |
-| **Exemplo** | O bibliotecário informa os dados de um aluno e seleciona **Cadastrar**. O sistema valida os dados e registra o novo usuário. |
 
-## RF02 — Cadastrar livro
+Identificação
+RNF02- Segurança e controle de acesso 
+Descrição
+O sistema deve garantir a segurança dos dados, com criptografia de senhas e registro de todas as ações dos usuários em logs auditáveis.
+Prioridade
+Alta 
+Critérios de aceitação
+- Senhas armazenadas com hash (bcrypt ou similar).
+- Logs com timestamp, usuário e ação realizada.
+- Apenas administradores podem acessar logs completos.
+- Sessão expira após 15 minutos de inatividade.
+Exemplo
+Um operador tenta alterar uma tarifa, mas o sistema bloqueia e registra a tentativa no log de auditoria.
 
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF02 |
-| **Descrição** | O sistema deve permitir cadastrar livros disponíveis na biblioteca. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Deve permitir informar título, autor, ISBN e quantidade disponível. 2. Deve impedir o cadastro de livro sem título. 3. Deve apresentar confirmação após o cadastro. |
-| **Exemplo** | O bibliotecário cadastra o livro *Engenharia de Software*, informa autor e ISBN, e o sistema registra o exemplar. |
 
-## RF03 — Realizar empréstimo
+Identificação
+RNF03- Usabilidade
+Descrição
+A interface deve ser simples e intuitiva
+Prioridade
+media
+Critérios de aceitação
+- Design responsivo (funciona em desktops e tablets).
+- Cores e ícones padronizados para indicar vaga livre/ocupada.
+Exemplo
+Um novo operador consegue registrar uma entrada sem precisar de treinamento, apenas seguindo os botões visíveis na tela inicial.
 
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF03 |
-| **Descrição** | O sistema deve permitir registrar o empréstimo de um livro para um usuário habilitado. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Deve verificar se o usuário está cadastrado. 2. Deve verificar a disponibilidade do livro. 3. Deve registrar usuário, livro, data do empréstimo e data prevista para devolução. 4. Deve atualizar a quantidade disponível. |
-| **Exemplo** | O bibliotecário seleciona o aluno e o livro. O sistema verifica a disponibilidade e registra o empréstimo. |
 
-## RF04 — Registrar devolução
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF04 |
-| **Descrição** | O sistema deve permitir registrar a devolução de um livro emprestado. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Deve localizar o empréstimo. 2. Deve registrar a data de devolução. 3. Deve atualizar a disponibilidade do livro. 4. Deve verificar se houve atraso. |
-| **Exemplo** | O bibliotecário registra a devolução. O sistema atualiza o estoque e verifica se o prazo foi cumprido. |
-
-## RF05 — Calcular multa
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF05 |
-| **Descrição** | O sistema deve calcular a multa quando um livro for devolvido após o prazo estabelecido. |
-| **Prioridade** | Média |
-| **Critérios de aceitação** | 1. Deve comparar a data prevista com a data efetiva de devolução. 2. Deve calcular o valor conforme a regra definida pela biblioteca. 3. Deve registrar a multa vinculada ao usuário. |
-| **Exemplo** | Um livro deveria ser devolvido em 10/09 e foi devolvido em 13/09. O sistema identifica o atraso e calcula a multa correspondente. |
-
-## RF06 — Consultar disponibilidade de livro
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RF06 |
-| **Descrição** | O sistema deve permitir consultar se determinado livro está disponível para empréstimo. |
-| **Prioridade** | Média |
-| **Critérios de aceitação** | 1. Deve permitir pesquisar por título, autor ou ISBN. 2. Deve informar a quantidade disponível. 3. Deve indicar quando não houver exemplares disponíveis. |
-| **Exemplo** | O usuário pesquisa um livro pelo título e o sistema informa que existem dois exemplares disponíveis. |
-
----
-
-# 3. Requisitos Não Funcionais
-
-> Requisitos não funcionais descrevem **características, restrições e condições de qualidade** que o sistema deve atender.
-
-## RNF01 — Segurança
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RNF01 |
-| **Descrição** | O sistema deve controlar o acesso às funcionalidades conforme o perfil do usuário. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Usuários devem autenticar-se antes de acessar funções restritas. 2. Funcionalidades administrativas devem estar disponíveis somente a perfis autorizados. |
-| **Exemplo** | Um aluno não pode acessar a funcionalidade de cadastro de livros, disponível ao bibliotecário. |
-
-## RNF02 — Usabilidade
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RNF02 |
-| **Descrição** | A interface deve apresentar informações e comandos de forma clara e consistente. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Os campos devem possuir rótulos claros. 2. Mensagens de erro devem orientar o usuário. 3. As ações principais devem ser facilmente identificáveis. |
-| **Exemplo** | Ao deixar a matrícula vazia, o sistema informa que o campo é obrigatório. |
-
-## RNF03 — Desempenho
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RNF03 |
-| **Descrição** | Consultas comuns devem apresentar resposta em tempo adequado para o uso cotidiano. |
-| **Prioridade** | Média |
-| **Critérios de aceitação** | Em condições normais de operação, consultas simples devem apresentar o resultado em até 3 segundos. |
-| **Exemplo** | Ao pesquisar um livro pelo título, o resultado deve ser apresentado em até 3 segundos. |
-
-## RNF04 — Disponibilidade
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RNF04 |
-| **Descrição** | O sistema deve estar disponível durante o horário de funcionamento da biblioteca. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | O sistema deve permanecer acessível durante o período definido pela instituição, exceto em manutenções previamente programadas. |
-| **Exemplo** | Durante o horário de atendimento, o bibliotecário consegue realizar empréstimos sem indisponibilidade não planejada. |
-
-## RNF05 — Integridade dos dados
-
-| Campo | Descrição |
-|---|---|
-| **Identificação** | RNF05 |
-| **Descrição** | O sistema deve preservar a consistência dos dados registrados. |
-| **Prioridade** | Alta |
-| **Critérios de aceitação** | 1. Não deve permitir empréstimo de livro inexistente. 2. Não deve permitir quantidade de exemplares negativa. 3. Um empréstimo deve estar associado a usuário e livro válidos. |
-| **Exemplo** | Ao tentar emprestar um livro sem exemplares disponíveis, o sistema bloqueia a operação e informa o motivo. |
-
----
-
-# 4. Modelo para preenchimento pelos estudantes
-
-## Requisito Funcional
-
-| Campo | Resposta do grupo |
-|---|---|
-| Identificação | RF__ |
-| Descrição | |
-| Prioridade | Alta / Média / Baixa |
-| Critérios de aceitação | |
-| Exemplo | |
-
-## Requisito Não Funcional
-
-| Campo | Resposta do grupo |
-|---|---|
-| Identificação | RNF__ |
-| Descrição | |
-| Prioridade | Alta / Média / Baixa |
-| Critérios de aceitação | |
-| Exemplo | |
-
----
-
-# 5. Orientações para elaboração
-
-Para cada requisito, o grupo deve verificar:
-
-- **Identificação:** possui código único?
-- **Descrição:** está claro o que o sistema deve fazer ou qual característica deve apresentar?
-- **Prioridade:** é essencial, importante ou pode ser implementado posteriormente?
-- **Critérios de aceitação:** é possível verificar objetivamente se o requisito foi atendido?
-- **Exemplo:** existe uma situação concreta que demonstra o requisito?
-
-## Regra prática
-
-Um bom requisito deve ser:
-
-**Claro + específico + verificável + relevante**
-
----
-
-# 6. Entregável da atividade
-
-O grupo deverá entregar:
-
-1. Identificação do sistema;
-2. Pelo menos **5 requisitos funcionais**;
-3. Pelo menos **3 requisitos não funcionais**;
-4. Prioridade de cada requisito;
-5. Critérios de aceitação;
-6. Exemplo de utilização;
-7. Identificação dos integrantes do grupo: (3 a 6 integrantes)
-
-**Próxima etapa:** os requisitos produzidos nesta ficha servirão de base para a identificação e especificação dos **casos de uso**.
+5. Orientações
+Um bom requisito deve ser claro, específico, verificável e relevante.
+O grupo deve verificar identificação, descrição, prioridade, critérios de aceitação e exemplo.
+6. Entregável
+Identificação do sistema
+Pelo menos 5 requisitos funcionais
+Pelo menos 3 requisitos não funcionais
+Prioridade de cada requisito
+Critérios de aceitação
+Exemplo de utilização
+Identificação dos integrantes do grupo : Bernardo Carvalho / Rafael Serafin 
+Próxima etapa: os requisitos produzidos servirão de base para a identificação e especificação dos casos de uso.
