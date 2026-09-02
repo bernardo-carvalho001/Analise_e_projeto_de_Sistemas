@@ -97,7 +97,8 @@ Critérios de aceitação
 Exemplo
 Administrador gera relatório de faturamento de agosto/2026.
 
-3. Requisitos Não Funcionais
+Requisitos Não Funcionais
+
 Identificação
 RNF01- Tempo de Resposta
 Descrição
