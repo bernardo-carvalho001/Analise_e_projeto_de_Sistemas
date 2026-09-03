@@ -1,32 +1,29 @@
 # Projeto APS — Documentação 5W
 
 ## O que (What)
-Este diretório contém a documentação do Projeto APS (Análise e Projeto de Sistemas) desenvolvida na disciplina. O objetivo é centralizar os artefatos do projeto — requisitos, modelagem, protótipos e entregas — e fornecer contexto claro usando a metodologia 5W para facilitar acompanhamento, avaliação e continuidade.
+Este projeto é um trabalho acadêmico da disciplina Engenharia de Software da Universidade de Brasília (UDF). Ele consiste em uma análise e desenvolvimento de um sistema que aplica princípios e boas práticas da engenharia de software.
 
 ## Quem (Who)
 - Equipe / Alunos: Nomes dos integrantes do grupo (substitua pelos nomes reais):
-  - [Nome 1]
-  - [Nome 2]
-  - [Nome 3]
-- Professor / Orientador: [Nome do professor]
+  - Bernardo Carvalho
+  - Rafael Serafin
+    
+- Professor / Orientador: Kadidja Valeria Reginaldo De Oliveira
 - Público-alvo: Professores, avaliadores e colegas da disciplina de Análise e Projeto de Sistemas.
 
 ## Por que (Why)
-- Justificativa do projeto: resolver/estudar um problema de domínio real ou acadêmico relacionado a sistemas de informação, aplicando técnicas de análise e projeto vistas na disciplina.
-- Objetivos principais:
-  - Levantar e documentar requisitos funcionais e não funcionais;
-  - Modelar o sistema (casos de uso, diagramas UML, arquiteturas);
-  - Produzir protótipos ou especificações para implementação;
-  - Avaliar requisitos para apresentação e entrega final.
+Este projeto foi desenvolvido com os seguintes objetivos:
+
+Aplicar conceitos fundamentais de engenharia de software
+Demonstrar compreensão de metodologias de desenvolvimento
+Exercitar práticas de análise, design e implementação de sistemas
+Contribuir para o aprendizado acadêmico em desenvolvimento de software
 
 ## Quando (When)
-- Cronograma (exemplo — ajuste conforme o calendário do grupo):
   - Início da análise: 2026-09-01
-  - Entrega de requisitos e modelagem inicial: 2026-09-15
-  - Protótipo / validação com usuários: 2026-10-01
-  - Entrega final e apresentação: 2026-10-15
+  - Status : Desenvolvimento
 
-> Substitua as datas acima pelo cronograma real da turma/projeto.
+
 
 ## Onde (Where)
 - Localização do repositório: projetoAPS/ (neste repositório GitHub: bernardo-carvalho001/Analise_e_projeto_de_Sistemas)
