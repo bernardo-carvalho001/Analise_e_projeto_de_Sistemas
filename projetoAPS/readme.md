@@ -37,6 +37,7 @@ ProjetoAPS/
 ├── [código-fonte/]
 ├── [testes/]
 └── [recursos/]
+
 Componentes Principais
 Documentação: Análises, diagramas e especificações do sistema
 Código-fonte: Implementação do projeto
