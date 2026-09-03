@@ -15,7 +15,7 @@ Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** 
 - **Status:** Em Desenvolvimento
 
 ### 📍 **WHERE** (Onde?)
-- **Localização do Repositório:** [GitHub - Analise_Projeto_Sistemas](https://github.com/rafaelserafinsousa/Analise_Projeto_Sistemas)
+- **Localização do Repositório:** https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/tree/main/projetoAPS
 - **Estrutura:** Disponível na pasta `projetoAPS`
 
 ### 🎯 **WHY** (Por Quê?)
