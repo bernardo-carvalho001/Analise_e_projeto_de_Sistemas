@@ -29,50 +29,62 @@ Contribuir para o aprendizado acadêmico em desenvolvimento de software
 - Localização do repositório: projetoAPS/ (neste repositório GitHub: bernardo-carvalho001/Analise_e_projeto_de_Sistemas)
 - Artefatos principais serão mantidos neste diretório e em subpastas organizadas por tipo (veja Estrutura esperada).
 
-## Como usar / Como está organizado (resumo prático)
-Abaixo está a estrutura sugerida para o diretório projetoAPS. Se preferirem, adaptem para atender às necessidades do projeto.
+📋 Conteúdo do Projeto
+Estrutura de Diretórios
+ProjetoAPS/
+├── README.md
+├── [documentação/]
+├── [código-fonte/]
+├── [testes/]
+└── [recursos/]
+Componentes Principais
+Documentação: Análises, diagramas e especificações do sistema
+Código-fonte: Implementação do projeto
+Testes: Casos de teste e validação
+Recursos: Arquivos auxiliares e dependências
+🚀 Como Começar
+Pré-requisitos
+[Listar ferramentas necessárias]
+[Listar dependências]
+Instalação
+# Clone o repositório
+git clone https://github.com/Kadidjah/Analise_Projeto_Sistemas.git
 
-```
-projetoAPS/
-  README.md            # (este arquivo) visão geral 5W, instruções e contatos
-  docs/                # Documentos formais: requisitos, especificações, atas
-  modelos/             # Diagramas UML (arquivos .png, .drawio, .svg) e PDFs
-  prototipos/          # Protótipos de interface (Figma links ou imagens)
-  dados/               # Exemplos de dados, scripts de importação, amostras
-  entregaveis/         # Versões finais dos documentos e apresentações
-  src/                 # (opcional) código-fonte caso o projeto tenha implementação
-  tasks.md             # (opcional) lista de tarefas e responsáveis
-```
+# Navegue até o projeto
+cd Analise_Projeto_Sistemas/ProjetoAPS
+Execução
+# [Comandos para executar o projeto]
+📚 Documentação
+Consulte os arquivos de documentação para:
 
-Observação: atualmente este diretório contém apenas este README; crie as subpastas acima conforme forem gerando artefatos.
+Análise de requisitos
+Diagramas UML
+Especificações técnicas
+Guia de uso
+🛠️ Tecnologias Utilizadas
+[Listar linguagens de programação]
+[Listar frameworks e bibliotecas]
+[Listar ferramentas de desenvolvimento]
+✅ Checklist do Projeto
+ Análise de requisitos completa
+ Design do sistema finalizado
+ Implementação concluída
+ Testes implementados
+ Documentação finalizada
+ Revisão de código
+📝 Notas Importantes
+Projeto acadêmico da disciplina Engenharia de Software
+Siga as melhores práticas de codificação durante o desenvolvimento
+Mantenha a documentação atualizada
+📞 Contato e Suporte
+Para dúvidas sobre o projeto, abra uma issue no repositório.
 
-## Artefatos esperados
-- Documento de Visão / Requisitos (requisitos funcionais e não funcionais)
-- Modelagem (casos de uso, diagramas de classes, sequência, arquitetura)
-- Protótipo de interface (screenshots, link do Figma ou equivalente)
-- Plano de testes e critérios de aceitação
-- Apresentação (slides) e relatório final
+📄 Licença
+[Especificar licença do projeto]
 
-## Padrões e formatos recomendados
-- Formato de documentos: Markdown (.md) para texto e explicações; PDF para entregáveis finais quando solicitado
-- Nomes de arquivos: usar prefixos com tipo e versão, ex.: req_v1.0.md, diagrama_classe_v1.drawio, apresentacao_v1.pdf
-- Diagramas: preferir formatos editáveis (drawio, .xml) além de imagens exportadas (.png/.svg)
-
-## Como contribuir
-1. Crie uma branch com o padrão: feature/<nome>-<sobrenome>
-2. Adicione ou edite arquivos na pasta apropriada (docs/, modelos/, prototipos/, etc.)
-3. Abra um Pull Request descrevendo as mudanças e vincule membros responsáveis
-4. Marque um revisor do grupo e aguarde aprovação antes do merge
-
-## Contatos
-- Líder do projeto / contato principal: [email@example.com] (substituir pelo e-mail real)
-- Canal de comunicação do grupo: [ex: Discord / Slack / Teams / e-mail em grupo]
+Última atualização: Agosto de 2026
 
 ## Licença
 Este repositório herda a licença do projeto raiz (veja o arquivo LICENSE na raiz do repositório). Substitua ou especifique outra licença aqui se necessário.
 
----
 
-Notas finais:
-- Substitua os marcadores com [colchetes] por informações reais do seu grupo (nomes, datas, contatos).
-- Se quiser, eu posso criar a estrutura de diretórios sugerida (docs/, modelos/, prototipos/, etc.) e adicionar templates iniciais (modelo de requisitos, template de diagrama, checklist de apresentação). Diga se quer que eu crie esses arquivos e quais nomes/formatos prefere.
