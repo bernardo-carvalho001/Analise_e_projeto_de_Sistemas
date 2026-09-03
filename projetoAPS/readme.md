@@ -53,10 +53,6 @@ ProjetoAPS/
 - [Listar ferramentas necessárias]
 - [Listar dependências]
 
-### Instalação
-```bash
-# Clone o repositório
-git clone https://github.com/Kadidjah/Analise_Projeto_Sistemas.git
 
 # Navegue até o projeto
 cd Analise_Projeto_Sistemas/ProjetoAPS
