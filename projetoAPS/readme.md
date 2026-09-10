@@ -6,7 +6,7 @@
 Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** da Universidade de Brasília (UnB/UDF). Ele consiste em uma análise e desenvolvimento de um sistema que aplica princípios e boas práticas da engenharia de software.
 
 ### 👥 **WHO** (Quem?)
-- **Desenvolvedor(es):** Rafael Serafin / Bernardo Carvalho
+- **Desenvolvedor(es):** [Rafael Serafin](https://github.com/rafaelserafinsousa) / [Bernardo Carvalho](https://github.com/bernardo-carvalho001?tab=following)
 - **Instituição:** Centro Universitário UDF 
 - **Disciplina:** Engenharia de Software
 
