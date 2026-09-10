@@ -1,4 +1,4 @@
-Modelo do template: https://miro.com/pt/modelos/moscow-matrix-basic/
+Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 # 📋 Projeto de APS [Nome do projeto]
 
@@ -15,8 +15,8 @@ Modelo do template: https://miro.com/pt/modelos/moscow-matrix-basic/
 
 | Integrante | Nome |
 |---|---|
-| 1 | |
-| 2 | |
+| 1 |[rafaelserafinsousa](https://github.com/rafaelserafinsousa)  |
+| 2 |[https://github.com/bernardo-carvalho001](https://github.com/bernardo-carvalho001) |
 | 3 | |
 | 4 | |
 | 5 | |
