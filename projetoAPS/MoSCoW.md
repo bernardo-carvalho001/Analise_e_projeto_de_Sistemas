@@ -16,7 +16,7 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 | Integrante | Nome |
 |---|---|
 | 1 |[rafaelserafinsousa](https://github.com/rafaelserafinsousa)  |
-| 2 |[https://github.com/bernardo-carvalho001](https://github.com/bernardo-carvalho001) |
+| 2 |[Bernardo carvalho](https://github.com/bernardo-carvalho001)|
 | 3 | |
 | 4 | |
 | 5 | |
