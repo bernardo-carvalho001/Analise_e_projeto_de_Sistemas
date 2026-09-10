@@ -123,7 +123,7 @@ Registre as principais informações obtidas durante o levantamento.
 
 | Pergunta | Resposta |
 |---|---|
-| O que o usuário precisa fazer? | |
+| O que o usuário precisa fazer? |X|
 | Qual problema enfrenta atualmente? | |
 | Quais informações precisa consultar? | |
 | Quais informações precisa cadastrar ou alterar? | |
