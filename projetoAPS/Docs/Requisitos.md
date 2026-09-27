@@ -4,7 +4,7 @@
 **Curso:** Engenharia de Software  
 **Disciplina:** Análise e Projeto de Sistemas  
 **Instituição:** UDF Centro Universitário  
-**Grupo/integrantes:** ______________________________________________  
+**Grupo/integrantes:**https://github.com/bernardo-carvalho001|https://github.com/rafaelserafinsousa
 **Turma:** ____________________  **Data:** ____/____/______  **Versão:** 1.0
 
 > Preencha uma ficha para cada requisito identificado. Registre a necessidade na linguagem do stakeholder e esclareça termos ambíguos antes de validar a ficha com ele.
