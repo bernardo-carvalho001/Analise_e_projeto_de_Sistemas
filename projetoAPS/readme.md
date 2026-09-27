@@ -65,10 +65,8 @@ cd Analise_Projeto_Sistemas/ProjetoAPS
 
 ---
 
-## 📚 Documentação
-
 ## Documentação de requisitos
-- [Ficha de elicitação REQ-001]([projetoAPS/Docs/Requisitos.md](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/blob/main/projetoAPS/Docs/Requisitos.md))
+- [Ficha de elicitação REQ-001](projetoAPS/Docs)
 - [Versão PDF](docs/requisitos/ficha-elicitacao-REQ-001.pdf)
 
 ---
