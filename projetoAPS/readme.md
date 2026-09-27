@@ -67,11 +67,9 @@ cd Analise_Projeto_Sistemas/ProjetoAPS
 
 ## 📚 Documentação
 
-Consulte os arquivos de documentação para:
-- Análise de requisitos
-- Diagramas UML
-- Especificações técnicas
-- Guia de uso
+## Documentação de requisitos
+- [Ficha de elicitação REQ-001](docs/requisitos/ficha-elicitacao-REQ-001.md)
+- [Versão PDF](docs/requisitos/ficha-elicitacao-REQ-001.pdf)
 
 ---
 
