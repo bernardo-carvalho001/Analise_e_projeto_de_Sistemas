@@ -68,7 +68,7 @@ cd Analise_Projeto_Sistemas/ProjetoAPS
 ## 📚 Documentação
 
 ## Documentação de requisitos
-- [Ficha de elicitação REQ-001](docs/requisitos/ficha-elicitacao-REQ-001.md)
+- [Ficha de elicitação REQ-001](projetoAPS/Docs/Requisitos.md)
 - [Versão PDF](docs/requisitos/ficha-elicitacao-REQ-001.pdf)
 
 ---
