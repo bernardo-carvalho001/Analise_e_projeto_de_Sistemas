@@ -149,7 +149,7 @@ Os requisitos funcionais representam as funcionalidades e os comportamentos espe
 
 | ID | Requisito Funcional | Stakeholder/Fonte | Necessidade | Prioridade |
 |---|---|---|---|---|
-|RF01|	|O sistema deve permitir o cadastro de veículos por placa, modelo e cor.|	Cliente/Motorista	|N01, N02| Alta|
+|RF01|O sistema deve permitir o cadastro de veículos por placa, modelo e cor.|	Cliente/Motorista	|N01, N02| Alta|
 |RF02|	O sistema deve registrar a entrada e saída de veículos com data e hora.|	Operador de Estacionamento	|N06| Alta|
 |RF03|	O sistema deve exibir em tempo real a quantidade de vagas livres e a lotação do estacionamento.|	Cliente/Motorista, Administrador|	N01, N04| Alta|
 |RF04|	O sistema deve identificar e localizar as vagas livres dentro do estacionamento.|	Cliente/Motorista|	N03	| Alta|
@@ -163,28 +163,16 @@ Os requisitos funcionais representam as funcionalidades e os comportamentos espe
 ---
 
 # ⭐ 9. Requisitos de Qualidade
-
-Os requisitos de qualidade devem ser escritos de forma clara e, sempre que possível, **mensurável e verificável**.
-
-Evite:
-
-> ❌ O sistema deve ser rápido.
-
-Prefira:
-
-> ✅ O sistema deve apresentar o resultado das consultas em até 2 segundos para 95% das requisições.
-
----
-
+ 
 ## Requisitos de Qualidade do Projeto
 
 | ID | Característica de Qualidade | Requisito | Como será verificado? |
 |---|---|---|---|
-| RQ01 | Desempenho | | |
-| RQ02 | Segurança | | |
-| RQ03 | Usabilidade/Interação | | |
-| RQ04 | Confiabilidade | | |
-| RQ05 | Compatibilidade/Portabilidade | | |
+|RQ01|	Desempenho|	O sistema deve processar operações críticas (entrada, saída, consulta de vaga) em até 3 segundos sob carga normal de até 50 requisições simultâneas.	|Testes de carga com ferramentas como JMeter, medindo tempo de resposta.|
+|RQ02	|Segurança	|O sistema deve armazenar senhas com criptografia (hash bcrypt) e registrar todas as ações em logs auditáveis.	|Testes de segurança e auditoria nos logs; verificação do hash no banco.|
+|RQ03|	Usabilidade/Interação|O sistema deve ter interface responsiva e intuitiva, permitindo que um novo operador registre uma entrada sem treinamento prévio.|	Teste de usabilidade com usuários reais; análise de tempo de execução da tarefa.|
+|RQ04|	Confiabilidade	|O sistema deve estar disponível 99% do tempo em horário comercial (10h às 22h).	|Monitoramento de uptime e registro de indisponibilidades.|
+|RQ05	|Compatibilidade/Portabilidade|	O sistema deve funcionar em desktops e tablets, com design responsivo.	|Testes em diferentes navegadores e dispositivos.|
 
 ---
 
@@ -192,21 +180,10 @@ Prefira:
 
 Registre as limitações identificadas no projeto.
 
-As restrições podem estar relacionadas a:
-
-- tecnologia;
-- prazo;
-- orçamento;
-- legislação;
-- infraestrutura;
-- processo;
-- recursos disponíveis.
-
-| ID | Restrição | Categoria | Justificativa/Fonte |
-|---|---|---|---|
-| RES01 | | | |
-| RES02 | | | |
-| RES03 | | | |
+|RES01|	O sistema deve respeitar a LGPD no tratamento de dados pessoais dos clientes.	|Legislação	Lei nº 13.709/2018 (LGPD).|
+|RES02|	O projeto deve ser entregue dentro do semestre letivo.|	Prazo	Cronograma da disciplina.|
+|RES03|	O sistema deve integrar-se com catracas/cancelas e câmeras já existentes no shopping.	|Infraestrutura	Equipamentos já instalados no local.|
+|RES04|	O orçamento para desenvolvimento e implantação é limitado.	|Orçamento	Recursos disponíveis do grupo/projeto.|
 
 ---
 
@@ -214,20 +191,13 @@ As restrições podem estar relacionadas a:
 
 Registre as regras do domínio que precisam ser respeitadas pelo sistema.
 
-## Exemplo
-
-**RN01**
-
-> Somente estudantes regularmente matriculados podem solicitar o serviço acadêmico.
-
----
-
 | ID | Regra de Negócio | Fonte |
 |---|---|---|
-| RN01 | | |
-| RN02 | | |
-| RN03 | | |
-
+|RN01|	Cada vaga só pode ser ocupada por um veículo por vez.	|RF02 / Administração do shopping|
+|RN02	|Clientes acumulam pontos de fidelidade a cada uso do estacionamento, que podem ser convertidos em descontos.	|RF07 / Cliente|
+|RN03|	A tarifa é progressiva: 1ª hora R$10,00 e demais horas R$5,00.	|RF06 / Tabela de preços do shopping|
+|RN04	|Somente administradores podem acessar logs completos e alterar tarifas.|	RNF02 / Política de segurança|
+|RN05|	O comprovante de pagamento deve conter placa, tempo de permanência, valor e data/hora.	|RF09 / Cliente|
 ---
 
 # 🔗 12. Rastreabilidade Inicial
@@ -236,14 +206,14 @@ Relacione as necessidades identificadas aos requisitos correspondentes.
 
 | Necessidade | Stakeholder | Requisito(s) relacionado(s) |
 |---|---|---|
-| N01 | | |
-| N02 | | |
-| N03 | | |
-| N04 | | |
-| N05 | | |
-| N06 | | |
-| N07 | | |
-| N08 | | |
+|N01|	Cliente/Motorista|	RF03, RF06|
+|N02|Cliente/Motorista	|RF07|
+|N03|Cliente/Motorista|	RF04|
+|N04	|Administrador do Shopping	|RF03, RF08|
+|N05	|Administrador do Shopping	|RF08|
+|N06|	Operador de Estacionamento|	RF02, RF05, RF10|
+|N07	|Setor de Segurança	|RF10, RNF02|
+|N08|	Equipe de TI / Suporte|	RNF02, RQ02|
 
 ---
 
@@ -253,44 +223,32 @@ Utilize as seguintes categorias:
 
 | Categoria | Significado |
 |---|---|
-| 🔴 **M — Must Have** | Requisito indispensável |
-| 🟠 **S — Should Have** | Muito importante, mas pode esperar temporariamente |
-| 🟢 **C — Could Have** | Desejável se houver tempo e recursos |
-| ⚪ **W — Won't Have Now** | Não será implementado nesta entrega |
+|RF01|	Cadastro de veículos|	M	|Base para todas as operações do sistema.|
+|RF02|Registro de entrada e saída	|M	|Essencial para controle do estacionamento.|
+|RF03|	Exibir vagas livres e lotação	|M	|Resolve o problema central identificado.|
+|RF04	|Localizar vagas livres	|M	|Complementa RF03 e melhora a experiência.|
+|RF05	|Cálculo do tempo de permanência|	M|Necessário para tarifação.|
+|RF06	|Cálculo da tarifa|	S|	Importante, mas pode ser ajustado depois|
+|RF07|	Programa de fidelidade|	S	|Agrega valor, mas não é crítico na 1ª versão.|
+|RF08	|Relatórios|	C	|Desejável, mas pode ser adiado.|
+|RF09	|Emissão de comprovante|	S|	Importante para o cliente, mas pode ser simplificado.|
+|RF10|	Cadastro de usuários	|M|	Necessário para controle de acesso.|
+|RQ01|	Desempenho|	M|	Impacta diretamente a experiência.|
+|RQ02	|Segurança	|M	|Requisito legal e crítico.|
+|RQ03|	Usabilidade|	S|	Importante, mas pode ser refinada.|
+|RQ04	|Confiabilidade|	S	|Relevante, mas pode ser monitorada depois.|
+|RQ05|	Compatibilidade|	C	|Desejável, mas não impede a 1ª versão.|
 
----
-
-## Matriz de Priorização
-
-| ID | Requisito | MoSCoW | Justificativa |
-|---|---|:---:|---|
-| RF01 | | M / S / C / W | |
-| RF02 | | M / S / C / W | |
-| RF03 | | M / S / C / W | |
-| RF04 | | M / S / C / W | |
-| RF05 | | M / S / C / W | |
-| RF06 | | M / S / C / W | |
-| RF07 | | M / S / C / W | |
-| RF08 | | M / S / C / W | |
-| RQ01 | | M / S / C / W | |
-| RQ02 | | M / S / C / W | |
-| RQ03 | | M / S / C / W | |
-| RQ04 | | M / S / C / W | |
-| RQ05 | | M / S / C / W | |
-
----
 
 # 🚀 14. Requisitos da Primeira Versão
 
 Após aplicar a técnica MoSCoW, selecionem os **5 requisitos considerados indispensáveis para a primeira versão**.
 
-| Ordem | ID | Requisito | Por que deve estar na primeira versão? |
-|:---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+|1|	RF03|	Exibir vagas livres e lotação|	Resolve o problema central do projeto.|
+|2|	RF02	|Registro de entrada e saída	|Essencial para o funcionamento do estacionamento.|
+|3|	RF01|	Cadastro de veículos| Base para identificação e controle.|
+|4|	RF04|	Localizar vagas livres	|Complementa a funcionalidade principal.|
+|5|RF10	|Cadastro de usuários	|Necessário para controle de acesso e segurança.|
 
 ---
 
@@ -299,26 +257,24 @@ Após aplicar a técnica MoSCoW, selecionem os **5 requisitos considerados indis
 Selecionem pelo menos três requisitos que poderão ser adiados.
 
 | ID | Requisito | Motivo para adiar | Impacto |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+|RF07|	Programa de fidelidade	Complexidade adicional de regras e integração.	|Médio — agrega valor, mas não é crítico.
+|RF08	|Relatórios	Não é essencial para operação básica.	|Baixo — útil para gestão, mas pode esperar.|
+|RQ05|	Compatibilidade/Portabilidade	Pode ser refinada após validação da 1ª versão.	|Baixo — melhora alcance, mas não impede uso.|
 
 ---
 
 # 🔍 16. Revisão por Pares
 
-**Grupo responsável pela revisão:** __________________________
+Grupo responsável pela revisão: Grupo Revisor (a definir)
 
 Registre os problemas identificados durante a revisão.
 
 | ID do Requisito | Problema Encontrado | Sugestão de Melhoria |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-
+|RF01|	Descrição ambígua ("carro, modelo e placa").	|Especificar campos obrigatórios e formato da placa.|
+|RF06|	Não define o que acontece em caso de perda de ticket.	|Incluir regra para veículos sem registro de entrada.|
+|RNF02|	Não especifica tempo de retenção dos logs.	|Definir período de armazenamento (ex: 6 meses).|
+|RF07|	Falta detalhar como os pontos são acumulados e resgatados.	|Criar regra de negócio específica para fidelidade.|
 ---
 
 # ✅ 17. Checklist de Qualidade dos Requisitos
