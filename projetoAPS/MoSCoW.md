@@ -221,34 +221,36 @@ Relacione as necessidades identificadas aos requisitos correspondentes.
 
 Utilize as seguintes categorias:
 
-| Categoria | Significado |
-|---|---|
-|RF01|	Cadastro de veículos|	M	|Base para todas as operações do sistema.|
-|RF02|Registro de entrada e saída	|M	|Essencial para controle do estacionamento.|
-|RF03|	Exibir vagas livres e lotação	|M	|Resolve o problema central identificado.|
-|RF04	|Localizar vagas livres	|M	|Complementa RF03 e melhora a experiência.|
-|RF05	|Cálculo do tempo de permanência|	M|Necessário para tarifação.|
-|RF06	|Cálculo da tarifa|	S|	Importante, mas pode ser ajustado depois|
-|RF07|	Programa de fidelidade|	S	|Agrega valor, mas não é crítico na 1ª versão.|
-|RF08	|Relatórios|	C	|Desejável, mas pode ser adiado.|
-|RF09	|Emissão de comprovante|	S|	Importante para o cliente, mas pode ser simplificado.|
-|RF10|	Cadastro de usuários	|M|	Necessário para controle de acesso.|
-|RQ01|	Desempenho|	M|	Impacta diretamente a experiência.|
-|RQ02	|Segurança	|M	|Requisito legal e crítico.|
-|RQ03|	Usabilidade|	S|	Importante, mas pode ser refinada.|
-|RQ04	|Confiabilidade|	S	|Relevante, mas pode ser monitorada depois.|
-|RQ05|	Compatibilidade|	C	|Desejável, mas não impede a 1ª versão.|
+| ID | Requisito | MoSCoW | Justificativa |
+|---|---|---|---|
+| RF01 | Cadastro de veículos | M | Base para todas as operações do sistema. |
+| RF02 | Registro de entrada e saída | M | Essencial para controle do estacionamento. |
+| RF03 | Exibir vagas livres e lotação | M | Resolve o problema central identificado. |
+| RF04 | Localizar vagas livres | M | Complementa RF03 e melhora a experiência. |
+| RF05 | Cálculo do tempo de permanência | M | Necessário para tarifação. |
+| RF06 | Cálculo da tarifa | S | Importante, mas pode ser ajustado depois. |
+| RF07 | Programa de fidelidade | S | Agrega valor, mas não é crítico na 1ª versão. |
+| RF08 | Relatórios | C | Desejável, mas pode ser adiado. |
+| RF09 | Emissão de comprovante | S | Importante para o cliente, mas pode ser simplificado. |
+| RF10 | Cadastro de usuários | M | Necessário para controle de acesso. |
+| RQ01 | Desempenho | M | Impacta diretamente a experiência. |
+| RQ02 | Segurança | M | Requisito legal e crítico. |
+| RQ03 | Usabilidade | S | Importante, mas pode ser refinada. |
+| RQ04 | Confiabilidade | S | Relevante, mas pode ser monitorada depois. |
+| RQ05 | Compatibilidade | C | Desejável, mas não impede a 1ª versão. |
 
 
 # 🚀 14. Requisitos da Primeira Versão
 
 Após aplicar a técnica MoSCoW, selecionem os **5 requisitos considerados indispensáveis para a primeira versão**.
 
-|1|	RF03|	Exibir vagas livres e lotação|	Resolve o problema central do projeto.|
-|2|	RF02	|Registro de entrada e saída	|Essencial para o funcionamento do estacionamento.|
-|3|	RF01|	Cadastro de veículos| Base para identificação e controle.|
-|4|	RF04|	Localizar vagas livres	|Complementa a funcionalidade principal.|
-|5|RF10	|Cadastro de usuários	|Necessário para controle de acesso e segurança.|
+| Ordem | ID | Requisito | Por que deve estar na primeira versão? |
+|:---:|---|---|---|
+| 1 | RF03 | Exibir vagas livres e lotação | Resolve o problema central do projeto. |
+| 2 | RF02 | Registro de entrada e saída | Essencial para o funcionamento do estacionamento. |
+| 3 | RF01 | Cadastro de veículos | Base para identificação e controle. |
+| 4 | RF04 | Localizar vagas livres | Complementa a funcionalidade principal. |
+| 5 | RF10 | Cadastro de usuários | Necessário para controle de acesso e segurança. |
 
 ---
 
@@ -257,24 +259,24 @@ Após aplicar a técnica MoSCoW, selecionem os **5 requisitos considerados indis
 Selecionem pelo menos três requisitos que poderão ser adiados.
 
 | ID | Requisito | Motivo para adiar | Impacto |
-|RF07|	Programa de fidelidade	Complexidade adicional de regras e integração.	|Médio — agrega valor, mas não é crítico.
-|RF08	|Relatórios	Não é essencial para operação básica.	|Baixo — útil para gestão, mas pode esperar.|
-|RQ05|	Compatibilidade/Portabilidade	Pode ser refinada após validação da 1ª versão.	|Baixo — melhora alcance, mas não impede uso.|
+|---|---|---|---|
+| RF07 | Programa de fidelidade | Complexidade adicional de regras e integração. | Médio — agrega valor, mas não é crítico. |
+| RF08 | Relatórios | Não é essencial para operação básica. | Baixo — útil para gestão, mas pode esperar. |
+| RQ05 | Compatibilidade/Portabilidade | Pode ser refinada após validação da 1ª versão. | Baixo — melhora alcance, mas não impede uso. |
 
 ---
-
 # 🔍 16. Revisão por Pares
 
-Grupo responsável pela revisão: Grupo Revisor (a definir)
+**Grupo responsável pela revisão:** Grupo Revisor (a definir)
 
 Registre os problemas identificados durante a revisão.
 
 | ID do Requisito | Problema Encontrado | Sugestão de Melhoria |
 |---|---|---|
-|RF01|	Descrição ambígua ("carro, modelo e placa").	|Especificar campos obrigatórios e formato da placa.|
-|RF06|	Não define o que acontece em caso de perda de ticket.	|Incluir regra para veículos sem registro de entrada.|
-|RNF02|	Não especifica tempo de retenção dos logs.	|Definir período de armazenamento (ex: 6 meses).|
-|RF07|	Falta detalhar como os pontos são acumulados e resgatados.	|Criar regra de negócio específica para fidelidade.|
+| RF01 | Descrição ambígua ("carro, modelo e placa"). | Especificar campos obrigatórios e formato da placa. |
+| RF06 | Não define o que acontece em caso de perda de ticket. | Incluir regra para veículos sem registro de entrada. |
+| RNF02 | Não especifica tempo de retenção dos logs. | Definir período de armazenamento (ex: 6 meses). |
+| RF07 | Falta detalhar como os pontos são acumulados e resgatados. | Criar regra de negócio específica para fidelidade. |
 ---
 
 # ✅ 17. Checklist de Qualidade dos Requisitos
