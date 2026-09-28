@@ -26,7 +26,7 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 **Estacionamento de shopping:**  
 
 **Descrição resumida do projeto:**  
-> O projeto consiste em um sistema de estacionamento voltado para shoppings centers, cujo objetivo é realizar o registro e o gerenciamento integrado de carros, vagas, usuários e segurança. A solução permitirá controlar a entrada e saída de veículos, monitorar a ocupação de vagas em tempo real, cadastrar e gerenciar usuários (clientes e operadores) e reforçar a segurança por meio de recursos como registro de ocorrências, controle de acesso e monitoramento das áreas do estacionamento. Dessa forma, o sistema busca otimizar a operação, melhorar a experiência dos clientes e garantir maior controle e segurança sobre o fluxo de veículos e pessoas no ambiente.
+O projeto consiste em um sistema de estacionamento voltado para shoppings centers, cujo objetivo é realizar o registro e o gerenciamento integrado de carros, vagas, usuários e segurança. A solução permitirá controlar a entrada e saída de veículos, monitorar a ocupação de vagas em tempo real, cadastrar e gerenciar usuários (clientes e operadores) e reforçar a segurança por meio de recursos como registro de ocorrências, controle de acesso e monitoramento das áreas do estacionamento. Dessa forma, o sistema busca otimizar a operação, melhorar a experiência dos clientes e garantir maior controle e segurança sobre o fluxo de veículos e pessoas no ambiente.
 
 
 
@@ -36,12 +36,9 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 ## 3.1 Qual problema será resolvido?
 
-> Descreva o problema identificado pelo grupo.  
-> Neste momento, concentre-se no problema e não na tecnologia que será utilizada.
-
 **Resposta:**
 
-> A dificuldade que os clientes enfrentam para encontrar vagas disponíveis em estacionamentos de shoppings, a falta de controle eficiente sobre a lotação do estacionamento e a ausência de incentivos que recompensem a fidelidade dos usuários. Esses fatores geram tempo de espera elevado, má experiência para o cliente e desaproveitamento da capacidade real de ocupação do estacionamento.
+A dificuldade que os clientes enfrentam para encontrar vagas disponíveis em estacionamentos de shoppings, a falta de controle eficiente sobre a lotação do estacionamento e a ausência de incentivos que recompensem a fidelidade dos usuários. Esses fatores geram tempo de espera elevado, má experiência para o cliente e desaproveitamento da capacidade real de ocupação do estacionamento.
 
 
 
@@ -49,21 +46,17 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 ## 3.2 Quem é afetado pelo problema?
 
-> Identifique os principais usuários, grupos ou organizações afetados.
 
 **Resposta:**
 
-> Os principais afetados são: os clientes/motoristas que utilizam o estacionamento do shopping e perdem tempo procurando vagas; os operadores do estacionamento, que não conseguem gerenciar a ocupação de forma eficiente; e a administração do shopping, que sofre impactos negativos na experiência do cliente e no uso dos seus serviços.
+Os principais afetados são: os clientes/motoristas que utilizam o estacionamento do shopping e perdem tempo procurando vagas; os operadores do estacionamento, que não conseguem gerenciar a ocupação de forma eficiente; e a administração do shopping, que sofre impactos negativos na experiência do cliente e no uso dos seus serviços.
 
 ---
 
 ## 3.3 Como o problema é resolvido atualmente?
 
-> Explique como as pessoas realizam atualmente o processo ou atividade relacionada ao problema.
-
 **Resposta:**
-
-> Atualmente, os clientes precisam circular pelas dependências do estacionamento procurando vagas livres de forma visual e manual, sem qualquer informação prévia sobre a lotação ou disponibilidade de vagas. Os operadores, por sua vez, controlam a entrada e saída de veículos de forma limitada, geralmente sem dados em tempo real sobre a ocupação total. Além disso, não existem programas de fidelidade ou descontos que reconheçam e recompensem clientes frequentes.
+Atualmente, os clientes precisam circular pelas dependências do estacionamento procurando vagas livres de forma visual e manual, sem qualquer informação prévia sobre a lotação ou disponibilidade de vagas. Os operadores, por sua vez, controlam a entrada e saída de veículos de forma limitada, geralmente sem dados em tempo real sobre a ocupação total. Além disso, não existem programas de fidelidade ou descontos que reconheçam e recompensem clientes frequentes.
 
 ---
 
@@ -79,15 +72,8 @@ Liste pelo menos três dificuldades observadas.
 
 # 🎯 4. Objetivo do Projeto
 
-Descreva o resultado que o projeto pretende alcançar.
-
-Utilize como referência:
-
-> **Nosso projeto pretende [resultado] para [stakeholder], contribuindo para [benefício].**
-
 **Objetivo:**
-
-> Nosso projeto pretende desenvolver um sistema de estacionamento que exiba em tempo real a lotação e a disponibilidade de vagas livres, além de oferecer descontos baseados na fidelidade do cliente, para os clientes e administradores de shoppings, contribuindo para a melhoria da experiência dos usuários, a otimização da ocupação das vagas e o incentivo ao uso recorrente do estacionamento.
+Nosso projeto pretende desenvolver um sistema de estacionamento que exiba em tempo real a lotação e a disponibilidade de vagas livres, além de oferecer descontos baseados na fidelidade do cliente, para os clientes e administradores de shoppings, contribuindo para a melhoria da experiência dos usuários, a otimização da ocupação das vagas e o incentivo ao uso recorrente do estacionamento.
 
 ---
 
@@ -97,11 +83,11 @@ Identifique as pessoas, grupos ou organizações que possuem interesse ou partic
 
 | ID | Stakeholder | Papel | Necessidade/Interesse | Influência |
 |---|---|---|---|---|
-| ST01 | | | | Alta / Média / Baixa |
-| ST02 | | | | Alta / Média / Baixa |
-| ST03 | | | | Alta / Média / Baixa |
-| ST04 | | | | Alta / Média / Baixa |
-| ST05 | | | | Alta / Média / Baixa |
+| ST01 |Cliente/Motorista | Usuário final do estacionamento| Encontrar vagas livres rapidamente, obter descontos por fidelidade e ter boa experiência| Alta |
+| ST02 |Administrador do Shopping|Gestor do estacionamento |Controlar lotação, otimizar ocupação e melhorar satisfação dos clientes | Alta  |
+| ST03 |Operador de Estacionamento |Funcionário que opera o sistema	 |Registrar entradas/saídas, consultar vagas e emitir relatórios|Média |
+| ST04 |Setor de Segurança |Responsável pela segurança do local |Monitorar acessos, registrar ocorrências e garantir controle de entrada/saída | Média  |
+| ST05 |Equipe de TI / Suporte |Responsável técnico pelo sistema |Garantir funcionamento, manutenção e integridade dos dados | Média |
 
 ---
 
@@ -109,11 +95,11 @@ Identifique as pessoas, grupos ou organizações que possuem interesse ou partic
 
 **Stakeholder:**
 
-> Preencher aqui.
+Cliente/Motorista (ST01)
 
 **Por que ele foi considerado o principal stakeholder?**
 
-> Preencher aqui.
+Porque é o usuário final que mais sofre com o problema identificado (dificuldade em encontrar vagas e falta de benefícios por fidelidade). O sucesso do sistema depende diretamente da melhoria da experiência desse usuário, já que é ele quem utiliza o estacionamento de forma recorrente e justifica a existência do projeto. Além disso, atender bem esse stakeholder impacta positivamente os demais, como a administração do shopping, que ganha em satisfação e retenção de clientes.
 
 ---
 
@@ -123,18 +109,18 @@ Registre as principais informações obtidas durante o levantamento.
 
 | Pergunta | Resposta |
 |---|---|
-| O que o usuário precisa fazer? |X|
-| Qual problema enfrenta atualmente? | |
-| Quais informações precisa consultar? | |
-| Quais informações precisa cadastrar ou alterar? | |
-| Quais tarefas são repetitivas? | |
-| Quais tarefas consomem mais tempo? | |
-| Quais erros acontecem atualmente? | |
-| Precisa receber notificações? | |
-| Precisa gerar documentos ou relatórios? | |
-| Existem informações que precisam ser protegidas? | |
-| O sistema precisará se comunicar com outros sistemas? | |
-| Existem regras obrigatórias que precisam ser respeitadas? | |
+| O que o usuário precisa fazer? |Consultar vagas livres, registrar entrada/saída, acompanhar lotação, acumular pontos de fidelidade e resgatar descontos.|
+| Qual problema enfrenta atualmente? |Dificuldade para encontrar vagas livres, falta de informação sobre lotação |
+| Quais informações precisa consultar? |Quantidade de vagas livres, localização das vagas, nível de lotação, histórico de uso, pontos de fidelidade e descontos disponíveis. |
+| Quais informações precisa cadastrar ou alterar? | Dados do veículo, dados pessoais do cliente, registro de entrada/saída, cadastro de usuários |
+| Quais tarefas são repetitivas? |Registro de entrada e saída de veículos, consulta de vagas disponíveis e atualização da lotação. |
+| Quais tarefas consomem mais tempo? |Procura manual por vagas livres e controle manual da ocupação do estacionamento. |
+| Quais erros acontecem atualmente? |Contagem incorreta de vagas ocupadas, perda de informações de entrada/saída e falhas no controle de descontos. |
+| Precisa receber notificações? |Sim, sobre vagas disponíveis, lotação máxima, pontos de fidelidade acumulados e descontos disponíveis. |
+| Precisa gerar documentos ou relatórios? |Sim, relatórios de ocupação, fluxo de veículos, histórico de uso e relatórios de fidelidade. |
+| Existem informações que precisam ser protegidas? |Sim, dados pessoais dos clientes, informações de veículos, registros de acesso e dados financeiros. |
+| O sistema precisará se comunicar com outros sistemas? |Sim, possivelmente com sistemas de pagamento, catracas/cancela, câmeras de segurança e sistemas do shopping. |
+| Existem regras obrigatórias que precisam ser respeitadas? |Sim, regras de tempo de permanência, tarifas, critérios de fidelidade e normas de segurança e privacidade de dados (LGPD). |
 
 ---
 
@@ -144,14 +130,14 @@ Antes de escrever os requisitos, registre as necessidades identificadas durante 
 
 | ID | Stakeholder | Necessidade Identificada | Problema Relacionado |
 |---|---|---|---|
-| N01 | | | |
-| N02 | | | |
-| N03 | | | |
-| N04 | | | |
-| N05 | | | |
-| N06 | | | |
-| N07 | | | |
-| N08 | | | |
+| N01 |Cliente/Motorista |Consultar em tempo real a quantidade de vagas livres e a lotação do estacionamento |Dificuldade em encontrar vagas disponíveis |
+| N02 |Cliente/Motorista |Receber descontos ou benefícios por fidelidade com o estacionamento |Ausência de incentivos para clientes frequentes |
+| N03 |Cliente/Motorista |Localizar com facilidade as vagas livres dentro do estacionamento |Tempo elevado procurando vagas |
+| N04 |	Administrador do Shopping |Monitorar a ocupação do estacionamento em tempo real |Falta de controle eficiente sobre a lotação |
+| N05 |Administrador do Shopping |Gerar relatórios de fluxo e ocupação para planejamento |Ausência de dados para tomada de decisão |
+| N06 |Operador de Estacionamento |Registrar entradas e saídas de veículos de forma rápida e segura |Processos manuais e sujeitos a erro |
+| N07 |Setor de Segurança|Controlar o acesso de veículos e pessoas ao estacionamento |Falta de controle e monitoramento eficiente |
+| N08 |Equipe de TI / Suporte |Garantir a integridade, segurança e disponibilidade dos dados |Necessidade de proteção de informações sensíveis (LGPD) |
 
 ---
 
@@ -159,30 +145,20 @@ Antes de escrever os requisitos, registre as necessidades identificadas durante 
 
 Os requisitos funcionais representam as funcionalidades e os comportamentos esperados do sistema.
 
-Utilize preferencialmente a estrutura:
-
-> **O sistema deve...**
-
-## Exemplo
-
-**RF01 — Consultar solicitação**
-
-> O sistema deve permitir que o usuário consulte o andamento de suas solicitações.
-
----
-
 ## Requisitos Funcionais do Projeto
 
 | ID | Requisito Funcional | Stakeholder/Fonte | Necessidade | Prioridade |
 |---|---|---|---|---|
-| RF01 | O sistema deve... | | | |
-| RF02 | O sistema deve... | | | |
-| RF03 | O sistema deve... | | | |
-| RF04 | O sistema deve... | | | |
-| RF05 | O sistema deve... | | | |
-| RF06 | O sistema deve... | | | |
-| RF07 | O sistema deve... | | | |
-| RF08 | O sistema deve... | | | |
+|RF01|	|O sistema deve permitir o cadastro de veículos por placa, modelo e cor.|	Cliente/Motorista	|N01, N02| Alta|
+|RF02|	O sistema deve registrar a entrada e saída de veículos com data e hora.|	Operador de Estacionamento	|N06| Alta|
+|RF03|	O sistema deve exibir em tempo real a quantidade de vagas livres e a lotação do estacionamento.|	Cliente/Motorista, Administrador|	N01, N04| Alta|
+|RF04|	O sistema deve identificar e localizar as vagas livres dentro do estacionamento.|	Cliente/Motorista|	N03	| Alta|
+|RF05|	O sistema deve calcular automaticamente o tempo de permanência do veículo.|	Operador de Estacionamento|	N06	| Alta|
+|RF06|	O sistema deve calcular o valor da tarifa com base no tempo estacionado.|	Cliente/Motorista, Administrador|	N01|Média
+|RF07|	O sistema deve gerenciar um programa de fidelidade, acumulando pontos e concedendo descontos aos clientes frequentes.	|Cliente/Motorista	|N02|	Média|
+|RF08|	O sistema deve gerar relatórios de ocupação, faturamento e histórico de movimentações.|	Administrador do Shopping	|N05	| Baixa|
+|RF09|	O sistema deve emitir comprovante de pagamento impresso ou digital.|	Cliente/Motorista|	N01| Média|
+|RF10|	O sistema deve permitir o cadastro e gerenciamento de usuários (clientes e operadores).	|Administrador, Operador|	N06, N08|	Alta|
 
 ---
 
