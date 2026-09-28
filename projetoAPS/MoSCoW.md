@@ -1,13 +1,13 @@
 Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
-# 📋 Projeto de APS [Nome do projeto]
+# 📋 Estacionamento de shopping
 
 ## Levantamento e Priorização de Requisitos
 
 **Etapa:** Levantamento de Requisitos (Utilizar a ficha dos requisitos levantados) 
 **Técnica de Priorização:** MoSCoW  
-**Data:** ______/______/______
-**Turma:** __________________________  
+**Data:** 28/09/2026
+**Turma:** D2 - Engenharia de Software 
 
 ---
 
@@ -17,20 +17,18 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 |---|---|
 | 1 |[rafaelserafinsousa](https://github.com/rafaelserafinsousa)  |
 | 2 |[Bernardo carvalho](https://github.com/bernardo-carvalho001)|
-| 3 | |
-| 4 | |
-| 5 | |
-| 6 | |
+
 
 ---
 
 # 2. Identificação do Projeto
 
-**Nome do projeto:**  
-> Preencher aqui.
+**Estacionamento de shopping:**  
 
 **Descrição resumida do projeto:**  
-> Apresente, em um pequeno parágrafo, o contexto do projeto e sua finalidade.
+> O projeto consiste em um sistema de estacionamento voltado para shoppings centers, cujo objetivo é realizar o registro e o gerenciamento integrado de carros, vagas, usuários e segurança. A solução permitirá controlar a entrada e saída de veículos, monitorar a ocupação de vagas em tempo real, cadastrar e gerenciar usuários (clientes e operadores) e reforçar a segurança por meio de recursos como registro de ocorrências, controle de acesso e monitoramento das áreas do estacionamento. Dessa forma, o sistema busca otimizar a operação, melhorar a experiência dos clientes e garantir maior controle e segurança sobre o fluxo de veículos e pessoas no ambiente.
+
+
 
 ---
 
@@ -43,7 +41,9 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 **Resposta:**
 
-> Preencher aqui.
+> A dificuldade que os clientes enfrentam para encontrar vagas disponíveis em estacionamentos de shoppings, a falta de controle eficiente sobre a lotação do estacionamento e a ausência de incentivos que recompensem a fidelidade dos usuários. Esses fatores geram tempo de espera elevado, má experiência para o cliente e desaproveitamento da capacidade real de ocupação do estacionamento.
+
+
 
 ---
 
@@ -53,7 +53,7 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 **Resposta:**
 
-> Preencher aqui.
+> Os principais afetados são: os clientes/motoristas que utilizam o estacionamento do shopping e perdem tempo procurando vagas; os operadores do estacionamento, que não conseguem gerenciar a ocupação de forma eficiente; e a administração do shopping, que sofre impactos negativos na experiência do cliente e no uso dos seus serviços.
 
 ---
 
@@ -63,7 +63,7 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 **Resposta:**
 
-> Preencher aqui.
+> Atualmente, os clientes precisam circular pelas dependências do estacionamento procurando vagas livres de forma visual e manual, sem qualquer informação prévia sobre a lotação ou disponibilidade de vagas. Os operadores, por sua vez, controlam a entrada e saída de veículos de forma limitada, geralmente sem dados em tempo real sobre a ocupação total. Além disso, não existem programas de fidelidade ou descontos que reconheçam e recompensem clientes frequentes.
 
 ---
 
@@ -71,9 +71,9 @@ Modelo do template: https://miro.com/app/board/uXjVHo3EFlE=/
 
 Liste pelo menos três dificuldades observadas.
 
-1. 
-2. 
-3. 
+1. Falta de informação em tempo real sobre a lotação e a localização de vagas livres, fazendo com que os motoristas percam tempo circulando pelo estacionamento.
+2. Ausência de controle eficiente da ocupação por parte dos operadores e da administração do shopping, dificultando a gestão e o planejamento do espaço.
+3. Inexistência de um sistema de fidelidade que ofereça descontos ou benefícios aos clientes frequentes, desestimulando o uso recorrente do estacionamento.
 
 ---
 
@@ -87,7 +87,7 @@ Utilize como referência:
 
 **Objetivo:**
 
-> Preencher aqui.
+> Nosso projeto pretende desenvolver um sistema de estacionamento que exiba em tempo real a lotação e a disponibilidade de vagas livres, além de oferecer descontos baseados na fidelidade do cliente, para os clientes e administradores de shoppings, contribuindo para a melhoria da experiência dos usuários, a otimização da ocupação das vagas e o incentivo ao uso recorrente do estacionamento.
 
 ---
 
