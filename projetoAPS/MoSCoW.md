@@ -1,6 +1,6 @@
 Modelo do template: [https://miro.com/app/board/uXjVHo3EFlE=/](https://miro.com/app/board/uXjVHo3EFlE=/?share_link_id=30023053919)
 
-# 📋 Estacionamento de shopping
+# 📋 Sistema de Gerenciamento de Vagas de Estacionamento
 
 ## Levantamento e Priorização de Requisitos
 
@@ -26,7 +26,7 @@ Modelo do template: [https://miro.com/app/board/uXjVHo3EFlE=/](https://miro.com/
 **Estacionamento de shopping:**  
 
 **Descrição resumida do projeto:**  
-O projeto consiste em um sistema de estacionamento voltado para shoppings centers, cujo objetivo é realizar o registro e o gerenciamento integrado de carros, vagas, usuários e segurança. A solução permitirá controlar a entrada e saída de veículos, monitorar a ocupação de vagas em tempo real, cadastrar e gerenciar usuários (clientes e operadores) e reforçar a segurança por meio de recursos como registro de ocorrências, controle de acesso e monitoramento das áreas do estacionamento. Dessa forma, o sistema busca otimizar a operação, melhorar a experiência dos clientes e garantir maior controle e segurança sobre o fluxo de veículos e pessoas no ambiente.
+O projeto consiste em um sistema de gerenciamento de vagas de estacionamento voltado para shoppings centers, cujo objetivo é realizar o registro e o gerenciamento integrado de carros, vagas, usuários e segurança. A solução permitirá controlar a entrada e saída de veículos, monitorar a ocupação de vagas em tempo real, cadastrar e gerenciar usuários (clientes e operadores) e reforçar a segurança por meio de recursos como registro de ocorrências, controle de acesso e monitoramento das áreas do estacionamento. Dessa forma, o sistema busca otimizar a operação, melhorar a experiência dos clientes e garantir maior controle e segurança sobre o fluxo de veículos e pessoas no ambiente.
 
 
 
