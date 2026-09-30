@@ -1,113 +1,107 @@
-# Projeto APS - Análise de Projeto de Sistemas
+# Projeto APS - Análise e Projeto de Sistemas
 
 ## 5W - Estrutura do Projeto
 
 ### 🔍 **WHAT** (O Quê?)
-Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** da Universidade de Brasília (UnB/UDF). Ele consiste em uma análise e desenvolvimento de um sistema que aplica princípios e boas práticas da engenharia de software.
+Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** do Centro Universitário UDF. Ele consiste na análise, modelagem e desenvolvimento de um sistema {inserir o tema, ex: de gestão de biblioteca / clínica médica}, aplicando princípios, padrões de projeto e boas práticas da engenharia de software.
 
 ### 👥 **WHO** (Quem?)
-- **Desenvolvedor(es):** [Rafael Serafin](https://github.com/rafaelserafinsousa) / [Bernardo Carvalho](https://github.com/bernardo-carvalho001?tab=following)
-- **Instituição:** Centro Universitário UDF 
+- **Desenvolvedores:** [Rafael Serafin](https://github.com/rafaelserafinsousa) | [Bernardo Carvalho](https://github.com/bernardo-carvalho001)
+- **Instituição:** Centro Universitário UDF
 - **Disciplina:** Engenharia de Software
 
 ### ⏰ **WHEN** (Quando?)
-- **Período:** 2026
-- **Status:** Em Desenvolvimento
+- **Período:** 2º Semestre de 2026
+- **Status:** Em Desenvolvimento 🚧
 
 ### 📍 **WHERE** (Onde?)
-- **Localização do Repositório:** https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/tree/main/projetoAPS
-- **Estrutura:** Disponível na pasta `projetoAPS`
+- **Repositório Principal:** [Analise_e_projeto_de_Sistemas](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/tree/main/projetoAPS)
+- **Documentação de Requisitos:** [Acesse aqui](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/blob/main/projetoAPS/Docs/Requisitos.md)
 
 ### 🎯 **WHY** (Por Quê?)
 Este projeto foi desenvolvido com os seguintes objetivos:
-- Aplicar conceitos fundamentais de engenharia de software
-- Demonstrar compreensão de metodologias de desenvolvimento
-- Exercitar práticas de análise, design e implementação de sistemas
-- Contribuir para o aprendizado acadêmico em desenvolvimento de software
+- Aplicar conceitos fundamentais de Engenharia de Software (Levantamento de Requisitos, Casos de Uso, UML).
+- Demonstrar compreensão de metodologias de desenvolvimento {inserir se usaram Ágil/Scrum}.
+- Exercitar práticas de análise, design estrutural e implementação de sistemas.
+- Contribuir para o portfólio acadêmico e profissional em desenvolvimento de software.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+**Linguagens e Frameworks:**
+- {Java 17 / Spring Boot}
+- {React / TypeScript}
+
+**Ferramentas e Banco de Dados:**
+- {PostgreSQL / MySQL}
+- {Git e GitHub para versionamento}
+- {Figma / Astah / Draw.io para modelagem UML}
 
 ---
 
 ## 📋 Conteúdo do Projeto
 
-### Estrutura de Diretórios
-```
-ProjetoAPS/
-├── README.md
-├── [documentação/]
-├── [código-fonte/]
-├── [testes/]
-└── [recursos/]
-```
+A estrutura de diretórios foi pensada para separar claramente a documentação do código executável:
 
-### Componentes Principais
-- **Documentação:** Análises, diagramas e especificações do sistema
-- **Código-fonte:** Implementação do projeto
-- **Testes:** Casos de teste e validação
-- **Recursos:** Arquivos auxiliares e dependências
+```text
+projetoAPS/
+├── Docs/             # Documentação de requisitos, diagramas UML e manuais
+├── Src/              # Código-fonte principal da aplicação
+├── Tests/            # Casos de teste e validação de software
+├── Assets/           # Recursos estáticos (imagens, ícones, protótipos)
+└── README.md         # Documentação inicial do repositório
+```
 
 ---
 
 ## 🚀 Como Começar
 
 ### Pré-requisitos
-- [Listar ferramentas necessárias]
-- [Listar dependências]
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+- [Git](https://git-scm.com/)
+- [{Node.js v18+ ou JDK 17+}]
+- [{Docker (opcional, para rodar o banco de dados)}]
 
+### Instalação e Execução
 
-# Navegue até o projeto
-cd Analise_Projeto_Sistemas/ProjetoAPS
-```
-
-### Execução
 ```bash
-# [Comandos para executar o projeto]
+# 1. Clone o repositório
+git clone https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas.git
+
+# 2. Navegue até a pasta do projeto
+cd Analise_e_projeto_de_Sistemas/projetoAPS/Src
+
+# 3. Instale as dependências
+npm install # ou mvn clean install
+
+# 4. Execute a aplicação
+npm start # ou java -jar target/app.jar
 ```
-
----
-
-## Documentação de requisitos
-- [projetoAPS/Docs](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/blob/main/projetoAPS/Docs/Requisitos.md)
-
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- [Listar linguagens de programação]
-- [Listar frameworks e bibliotecas]
-- [Listar ferramentas de desenvolvimento]
 
 ---
 
 ## ✅ Checklist do Projeto
 
-- [ ] Análise de requisitos completa
-- [ ] Design do sistema finalizado
-- [ ] Implementação concluída
-- [ ] Testes implementados
-- [ ] Documentação finalizada
-- [ ] Revisão de código
-
----
-
-## 📝 Notas Importantes
-
-- Projeto acadêmico da disciplina Engenharia de Software
-- Siga as melhores práticas de codificação durante o desenvolvimento
-- Mantenha a documentação atualizada
+- [x] Definição do Escopo e 5W
+- [x] Documentação de Requisitos Finalizada
+- [ ] Diagramas UML (Casos de Uso, Classes, Sequência)
+- [ ] Configuração do Ambiente e Banco de Dados
+- [ ] Implementação do Back-end
+- [ ] Implementação do Front-end
+- [ ] Testes Unitários
+- [ ] Revisão Final e Apresentação
 
 ---
 
 ## 📞 Contato e Suporte
 
-Para dúvidas sobre o projeto, abra uma [issue](https://github.com/Kadidjah/Analise_Projeto_Sistemas/issues) no repositório.
+Para reportar bugs ou tirar dúvidas sobre a arquitetura do projeto, abra uma [Issue](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/issues) no repositório.
 
 ---
 
 ## 📄 Licença
 
-[Especificar licença do projeto]
+Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT) - feito para fins educacionais.
 
----
-
-**Última atualização:** Agosto de 2026
+**Última atualização:** Setembro de 2026
