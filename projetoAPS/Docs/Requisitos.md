@@ -5,7 +5,7 @@
 **Instituição:** UDF Centro Universitário  
 **Grupo/integrantes:** https://github.com/bernardo-carvalho001 / https://github.com/rafaelserafinsousa  
 
-**Turma: D2 - Engenharia de Software**   **Data:** 27/09/2026   **Versão:** 1.0
+**Turma: D2 - Engenharia de Software**   **Data:** 27/09/2026   **Versão:** 1.2
 
 ## 1. Identificação do projeto
 
