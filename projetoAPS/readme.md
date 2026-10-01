@@ -15,7 +15,7 @@ Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** 
 ### ⏰ **WHEN** (Quando?)
 
 * **Período:** 2º Semestre de 2026
-* **Status:** Fase de Análise e Documentação 🚧
+* **Status:** Fase de Análise e Documentação 
 
 ### 📍 **WHERE** (Onde?)
 
@@ -85,7 +85,7 @@ cd Analise_e_projeto_de_Sistemas/projetoAPS
 * [x] Definição do Escopo e 5W
 * [x] Documentação de Requisitos Finalizada
 * [x] Priorização de Requisitos (MoSCoW)
-* [ ] Diagramas UML (Casos de Uso, Classes, Sequência)
+* [x] Diagramas UML (Casos de Uso, Classes, Sequência)
 * [ ] Prototipagem de Telas (Opcional)
 * [ ] Apresentação Final da Análise
 
