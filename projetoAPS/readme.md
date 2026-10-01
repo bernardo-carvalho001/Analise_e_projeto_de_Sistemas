@@ -3,100 +3,97 @@
 ## 5W - Estrutura do Projeto
 
 ### 🔍 **WHAT** (O Quê?)
-Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** do Centro Universitário UDF. Ele consiste na análise, modelagem e desenvolvimento de um sistema {inserir o tema, ex: de gestão de biblioteca / clínica médica}, aplicando princípios, padrões de projeto e boas práticas da engenharia de software.
+
+Este projeto é um trabalho acadêmico da disciplina **Engenharia de Software** do Centro Universitário UDF. Ele consiste na análise, modelagem e planejamento de um sistema de gestão para um estacionamento, aplicando princípios, padrões de projeto e boas práticas da engenharia de software.
 
 ### 👥 **WHO** (Quem?)
-- **Desenvolvedores:** [Rafael Serafin](https://github.com/rafaelserafinsousa) | [Bernardo Carvalho](https://github.com/bernardo-carvalho001)
-- **Instituição:** Centro Universitário UDF
-- **Disciplina:** Engenharia de Software
+
+* **Desenvolvedores:** [Rafael Serafin](https://github.com/rafaelserafinsousa) | [Bernardo Carvalho](https://github.com/bernardo-carvalho001)
+* **Instituição:** Centro Universitário UDF
+* **Disciplina:** Engenharia de Software
 
 ### ⏰ **WHEN** (Quando?)
-- **Período:** 2º Semestre de 2026
-- **Status:** Em Desenvolvimento 🚧
+
+* **Período:** 2º Semestre de 2026
+* **Status:** Fase de Análise e Documentação 🚧
 
 ### 📍 **WHERE** (Onde?)
-- **Repositório Principal:** [Analise_e_projeto_de_Sistemas](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/tree/main/projetoAPS)
-- **Documentação de Requisitos:** [Acesse aqui](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/blob/main/projetoAPS/Docs/Requisitos.md)
+
+* **Repositório Principal:** [Analise_e_projeto_de_Sistemas](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/tree/main/projetoAPS)
+* **Documentação de Requisitos:** [Acesse aqui](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/blob/main/projetoAPS/Docs/Requisitos.md)
 
 ### 🎯 **WHY** (Por Quê?)
+
 Este projeto foi desenvolvido com os seguintes objetivos:
-- Aplicar conceitos fundamentais de Engenharia de Software (Levantamento de Requisitos, Casos de Uso, UML).
-- Demonstrar compreensão de metodologias de desenvolvimento {inserir se usaram Ágil/Scrum}.
-- Exercitar práticas de análise, design estrutural e implementação de sistemas.
-- Contribuir para o portfólio acadêmico e profissional em desenvolvimento de software.
+
+* Aplicar conceitos fundamentais de Engenharia de Software (Levantamento de Requisitos, Casos de Uso, UML).
+* Exercitar práticas de análise estrutural e levantamento de necessidades de um sistema real.
+* Contribuir para o portfólio acadêmico em engenharia e documentação de software.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Ferramentas Utilizadas na Análise
 
-**Linguagens e Frameworks:**
-- {Java 17 / Spring Boot}
-- {React / TypeScript}
+Como o projeto encontra-se na fase de planejamento e engenharia, as ferramentas focam em documentação e modelagem:
 
-**Ferramentas e Banco de Dados:**
-- {PostgreSQL / MySQL}
-- {Git e GitHub para versionamento}
-- {Figma / Astah / Draw.io para modelagem UML}
+* **Documentação:** Markdown
+* **Versionamento:** Git e GitHub
+* **Modelagem UML:** {Inserir a ferramenta que usaram, ex: Astah / Draw.io / Lucidchart}
+* **Metodologia de Priorização:** MoSCoW
 
 ---
 
 ## 📋 Conteúdo do Projeto
 
-A estrutura de diretórios foi pensada para separar claramente a documentação do código executável:
+A estrutura de diretórios atual do repositório está organizada da seguinte forma, focada nos artefatos de documentação:
 
 ```text
 projetoAPS/
-├── Docs/             # Documentação de requisitos, diagramas UML e manuais
-├── Src/              # Código-fonte principal da aplicação
-├── Tests/            # Casos de teste e validação de software
-├── Assets/           # Recursos estáticos (imagens, ícones, protótipos)
-└── README.md         # Documentação inicial do repositório
+├── Docs/
+│   └── Requisitos.md
+├── Documentação/
+│   ├── ...
+│   └── Estacionamento_Projeto_APS...
+├── MoSCoW.md
+└── readme.md
 ```
 
 ---
 
-## 🚀 Como Começar
+## 🚀 Como Explorar o Projeto
 
-### Pré-requisitos
-Antes de iniciar, certifique-se de ter instalado em sua máquina:
-- [Git](https://git-scm.com/)
-- [{Node.js v18+ ou JDK 17+}]
-- [{Docker (opcional, para rodar o banco de dados)}]
+Como o projeto está na etapa de Engenharia de Software (sem código-fonte executável no momento), você pode conferir todo o trabalho de duas formas:
 
-### Instalação e Execução
+**Opção 1: Pelo Navegador**
+Basta navegar pelas pastas aqui mesmo no GitHub para ler a documentação, entender os requisitos no `Requisitos.md` e ver a priorização no `MoSCoW.md`.
+
+**Opção 2: Clonando localmente**
+Caso queira baixar os artefatos de documentação e diagramas para visualizar na sua máquina:
 
 ```bash
-# 1. Clone o repositório
+# Clone o repositório
 git clone https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas.git
 
-# 2. Navegue até a pasta do projeto
-cd Analise_e_projeto_de_Sistemas/projetoAPS/Src
-
-# 3. Instale as dependências
-npm install # ou mvn clean install
-
-# 4. Execute a aplicação
-npm start # ou java -jar target/app.jar
+# Acesse a pasta do projeto
+cd Analise_e_projeto_de_Sistemas/projetoAPS
 ```
 
 ---
 
 ## ✅ Checklist do Projeto
 
-- [x] Definição do Escopo e 5W
-- [x] Documentação de Requisitos Finalizada
-- [ ] Diagramas UML (Casos de Uso, Classes, Sequência)
-- [ ] Configuração do Ambiente e Banco de Dados
-- [ ] Implementação do Back-end
-- [ ] Implementação do Front-end
-- [ ] Testes Unitários
-- [ ] Revisão Final e Apresentação
+* [x] Definição do Escopo e 5W
+* [x] Documentação de Requisitos Finalizada
+* [x] Priorização de Requisitos (MoSCoW)
+* [ ] Diagramas UML (Casos de Uso, Classes, Sequência)
+* [ ] Prototipagem de Telas (Opcional)
+* [ ] Apresentação Final da Análise
 
 ---
 
 ## 📞 Contato e Suporte
 
-Para reportar bugs ou tirar dúvidas sobre a arquitetura do projeto, abra uma [Issue](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/issues) no repositório.
+Para dúvidas sobre a arquitetura e os requisitos levantados, abra uma [Issue](https://github.com/bernardo-carvalho001/Analise_e_projeto_de_Sistemas/issues) no repositório.
 
 ---
 
