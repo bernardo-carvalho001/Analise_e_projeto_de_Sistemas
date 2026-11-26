@@ -1,4 +1,9 @@
 # Vazee — Sistema de Gerenciamento de Vagas de Estacionamento
+<p align="center">
+  <img src="./imagens/Logo Vazee.png"
+       alt="Vazee - Estacione com praticidade"
+       width="700">
+</p>
 
 <p align="center">
   <strong>Estacione com praticidade. Sua experiência no shopping começa aqui.</strong>
